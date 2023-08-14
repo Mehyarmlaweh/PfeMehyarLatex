@@ -1,0 +1,285 @@
+\documentclass[12pt,fleqn,a4paper,twoside]{report}
+\newcommand{\chaptertoc}[1]{\chapter*{#1}
+\addcontentsline{toc}{chapter}{#1}
+\markboth{{#1}}{{#1}}}
+% Set the beginning of a LaTeX document
+\usepackage{algorithm,algorithmic}
+\usepackage[french]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}\usepackage{pdfpages}
+\usepackage{rotating}
+\usepackage{lscape}
+\usepackage{amsthm}
+\usepackage{makeidx} % allows for indexgeneration
+\usepackage{fmtcount}\usepackage{textcomp}
+\usepackage{fancyhdr}
+\usepackage{txfonts} \usepackage{algorithm,algorithmic}
+\usepackage[toc,page]{appendix}
+\usepackage{multirow}
+\usepackage{minitoc}
+\usepackage{roboto}
+
+
+%\usepackage{Packages/phs_goodies}
+\usepackage{graphicx}
+
+\usepackage{amsmath}
+\usepackage{epsfig}
+\usepackage{epstopdf}
+%\usepackage{xcolor,colortbl}
+\usepackage{subfig}
+\usepackage{fancyhdr}
+\usepackage{multirow}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+
+\usepackage{tocloft}
+
+\newcommand{\listofequations}{List of Equations}
+\newlistof{myequations}{equ}{\listofequations}
+\newcommand{\myequations}[1]{%
+\addcontentsline{equ}{myequations}{\protect\numberline{\theequation}#1}\par}
+\addto\captionsfrench{\renewcommand{\listfigurename}{Liste des figures}}
+
+
+
+\hypersetup{	
+colorlinks=true, %colorise les liens
+breaklinks=true, %permet le retour à la ligne dans les liens trop longs
+urlcolor= blue, %couleur des hyperliens
+linkcolor= black,	%couleur des liens internes
+citecolor=black,	%couleur des références
+pdftitle={Rapport de recherche}, %informations apparaissant dans
+pdfauthor={Mehyar}, %les informations du document
+pdfsubject={Simulation}	%sous Acrobat.
+}
+
+%entete de page
+\usepackage[top=3cm,bottom=2cm,right=1.9cm,left=1.9cm]{geometry}
+\usepackage{latexsym}
+\usepackage{subcaption}
+\usepackage{amssymb, euscript} %, eufrak}
+\usepackage{calc}
+\usepackage{booktabs}
+\usepackage{siunitx}
+\pagestyle{fancy}
+\fancyhf{}
+\headsep=15pt
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\chaptermark}[1]%
+{\markboth {{Chapitre~\thechapter~:\ #1}}{}}
+\renewcommand{\baselinestretch}{1.5}
+
+%pied de page
+
+\pagenumbering{roman}
+\setcounter{page}{-2}
+
+\lhead{}
+\rhead{\textsc{Chapitre} \thechapter}
+\rhead{\leftmark}
+\lfoot{}
+\cfoot{\thepage}
+\rfoot{}
+
+
+\usepackage{fancyhdr}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+
+
+
+%\fancyhead[CR]{}
+\usepackage{latexsym}
+\usepackage{amssymb, euscript} %, eufrak}
+\usepackage{calc}
+\vfuzz2pt % Don't report over-full v-boxes if over-edge is small
+\hfuzz2pt % Don't report over-full h-boxes if over-edge is small
+%\usepackage{Packages/phsabbreviations}
+%\usepackage{cases}
+%\usepackage{apacite}
+\usepackage{lettrine}
+\usepackage{a4wide}
+\usepackage{verbatim}
+\usepackage{tabularx}
+
+\usepackage{pict2e}
+\usepackage{floatflt}
+\usepackage{moreverb}
+\usepackage{pdfpages}
+\newtheorem{Theorem}{Theorem}[chapter]
+\newtheorem{Example}{Example}[chapter]
+\newtheorem{c-Example}{Counter-example} [chapter]
+\newtheorem{Proposition}{Proposition} [chapter]
+\newtheorem{Definition}{Definition} [chapter]
+\newtheorem{Lemma}{Lemma} [chapter]
+\newtheorem{Corol}{Corollary} [chapter]
+\usepackage[Lenny]{fncychap}
+\ChTitleVar{\Huge\sffamily\bfseries}
+\usepackage[nosectionbib]{apacite}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usetikzlibrary{backgrounds}
+\usepackage{caption}
+\captionsetup{position=below}
+\usepackage{array,multirow,makecell}
+\setcellgapes{1pt}
+\makegapedcells
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash }b{#1}}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash }b{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash }b{#1}}
+\renewcommand{\baselinestretch}{1.1} %interligne
+\setlength{\parskip}{0.3cm}
+\makeatletter
+% Generate the glossary
+\usepackage{glossaries}
+\renewcommand*{\glossaryentrynumbers}[1]{}
+\makeglossaries
+\usepackage{listings}
+\lstset{
+  basicstyle=\ttfamily,
+  language=Python,
+  showstringspaces=false,
+  breaklines=true,
+  frame=tb,
+  numbers=left,
+  numbersep=5pt,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{gray},
+  stringstyle=\color{green!70!black}
+}
+\setcounter{secnumdepth}{3}
+
+\usepackage[T1]{fontenc}
+\usepackage{afterpage}
+\begin{document}
+
+\newglossaryentry{adt}{name=ADT, description={Atlantic Daylight Time}}
+\newglossaryentry{est}{name=EST, description={Eastern Standard Time}}
+
+\include{pagegardeThese}
+
+
+
+
+  \include{citation}
+  
+
+\input{Remerciement}
+
+
+\pagenumbering{roman} \setcounter{page}{1}
+\tableofcontents
+
+\newpage
+\def\cleardoublepage{\clearpage
+ \if@twoside
+  \ifodd\c@page\else
+   \null\thispagestyle{empty}\newpage
+   \if@twocolumn\null\newpage\fi
+   \fi
+  \fi
+ }%
+\def\ps@chapterverso{\ps@empty}%
+%%%% fin macro %%%%
+
+
+
+%\newpage
+\thispagestyle{empty}
+\listoffigures
+\newpage
+\def\cleardoublepage{\clearpage
+ \if@twoside
+  \ifodd\c@page\else
+   \null\thispagestyle{empty}\newpage
+   \if@twocolumn\null\newpage\fi
+   \fi
+  \fi
+ }%
+\def\ps@chapterverso{\ps@empty}%
+%%%% fin macro %%%%
+
+
+%\newpage
+\thispagestyle{empty}
+\listoftables
+\newpage
+
+
+ \input{listofabr.tex}
+ 
+%%%% fin macro %%%%
+
+
+
+
+
+
+
+%\newpage
+
+
+
+\pagenumbering{arabic} \setcounter{page}{1}
+
+
+\input{introduction.tex}
+\clearpage
+
+\input{Chapter1.tex}
+\clearpage
+
+\input{Chapter2.tex}
+\clearpage
+
+\input{citation3}
+\clearpage
+
+\input{Chapter3.tex}
+\clearpage
+
+\input{Chapter4.tex}
+\clearpage
+
+\input{Chapter5.tex}
+\clearpage
+\input{Conclusion}
+
+
+%%%% fin macro %%%%
+
+%%%% fin macro %%%%
+
+
+ 
+%%%% fin macro %%%%
+
+%\addstarredchapter{Appendix}
+
+
+%\appendix
+
+%\input{Appendix1.tex}
+
+%%%% fin macro %%%%
+
+
+
+%\nocite{*}
+
+\bibliographystyle{apacite}
+\bibliography{NewBib}
+\newpage
+\thispagestyle{empty}
+
+
+ 
+
+\end{document}

@@ -1,0 +1,59 @@
+
+\chapter*{Introduction} \markboth{Introduction}{Introduction}
+
+La présente recherche est une étape vers l'obtention du diplôme de licence en Business Intelligence à l'IHEC de Carthage pour l'année 2022-2023. La chercheuse Lynda AYACHI a dirigé cette étude au sein du laboratoire CRISTAL pôle GRIFT de l'ENSI. Le laboratoire CRISTAL se concentre sur le développement des compétences dans deux domaines complémentaires, les réseaux et l'imagerie, avec des axes connexes tels que l'architecture et l'intelligence artificielle. 
+
+L'évaluation des performances des classifieurs constitue un aspect fondamental dans le domaine de l'apprentissage automatique. Elle permet de mesurer l'efficacité d'un modèle de classification et de guider les décisions en matière de développement et d'optimisation des algorithmes. Traditionnellement, les métriques d'évaluation, telles que l'accuracy, fournissent une mesure globale de la qualité d'un modèle. Cependant, ces mesures varient à chaque exécution de l'algorithme en raison des variations aléatoires de l'optimisation des paramètres lors de la phase d'apprentissage ou plus spécifiquement en raison de la sélection aléatoire des données d'apprentissage.
+
+Face à ce problème, il parait pertinent d'adopter une approche probabiliste pour évaluer les performances des classifieurs. L'intégration de l'aspect probabiliste permet de tenir compte de l'incertitude inhérente aux prédictions et d'obtenir une évaluation plus complète et précise des modèles de classification. Dans cette recherche, notre objectif est de développer une nouvelle métrique probabiliste pour l'évaluation des performances des classifieurs en utilisant des méthodes d'estimation non paramétrique des taux de précision.
+
+Les approches classiques d'estimation des taux de précision reposent souvent sur des hypothèses paramétriques simplificatrices, qui peuvent ne pas être adaptées à toutes les situations et à toutes les distributions de données. Ces hypothèses peuvent limiter la flexibilité des méthodes d'évaluation et conduire à des résultats biaisés ou peu fiables. Afin de surmonter ces limitations, nous proposons d'explorer des méthodes d'estimation non paramétriques, qui s'affranchissent des contraintes liées aux hypothèses paramétriques.
+
+Dans ce contexte, deux approches non paramétriques sont étudiées dans cette recherche : la méthode de l'histogramme et la méthode du noyau avec optimisation du paramètre de lissage. La méthode de l'histogramme offre une approche simple et intuitive, mais ne peut pas être performante dans des distributions complexes. Pour pallier cette limitation, nous explorons également la méthode du noyau avec optimisation du paramètre de lissage. Cette approche repose sur la représentation des échantillons sous forme de fonctions de densité de probabilité, qui sont ensuite utilisées pour estimer la ddp des accuracies. En utilisant des fonctions de noyau adaptées, cette méthode permet une estimation plus précise de ces densités.
+
+Afin d'illustrer notre approche, nous avons choisi de mener des classifications sur la base MNIST en utilisant le CNN pour lequel nous faisons varier le nombre d'époques. L'objectif est de déterminer le nombre d'époque optimal pour une meilleure classification. Aussi dans cette recherche, notre principale contribution est de proposer une métrique probabiliste basée sur l'estimation des dpp des accuracies des classifieurs.
+
+En complément, nous avons également développé une application pratique dans le cadre de cette recherche. Cette application fournit aux chercheurs une interface graphique conviviale, leur permettant d'estimer les densités de probabilités des différentes distributions à partir des données d'apprentissage. Cela offre un moyen pratique d'explorer et de visualiser les caractéristiques probabilistes des échantillons, facilitant ainsi l'analyse et la compréhension des modèles de classification.
+
+Ce rapport de recherche est organisé en plusieurs chapitres qui couvrent divers aspects de l'apprentissage automatique et de l'estimation de la densité de probabilité.\\
+Le \textbf{premier chapitre}, "\textit{Estimation ponctuelle de la densité de probabilité}", présente les méthodes de densité de probabilité et d'estimation non paramétrique. Il examine les méthodes différentes utilisées pour calculer la densité de probabilité à partir des données.\\
+Le \textbf{deuxième chapitre}, "\textit{Machine Learning}", met l'accent sur les réseaux neuronaux. Les principes fondamentaux du machine learning sont discutés dans ce chapitre, ainsi que les progrès les plus récents dans ce domaine.\\
+Le \textbf{troisième chapitre}, intitulé "\textit{Simulations}", traite une comparaison entre des méthodes d'estimation de la densité de probabilité non paramétriques. \\
+Le \textbf{quatrième chapitre}, "\textit{Application sur la base d'images MNIST}", se concentre sur l'application d'une méthode non-paramétrique à l'ensemble de données MNIST. Nous examinons en particulier l'influence du nombre d'époques sur l'accuracy d'un classifieur CNN.\\
+Enfin, le \textbf{cinquième chapitre}, intitulé "\textit{Simulateur}", présente une application développée dans le but de faciliter l'estimation des densités de probabilités pour les chercheurs.\\
+En combinant ces différents chapitres, ce rapport de recherche offre une vue d'ensemble complète des techniques d'estimation de la densité de probabilité et de leur application dans le domaine de l'apprentissage automatique.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

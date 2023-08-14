@@ -1,0 +1,130 @@
+\documentclass[a4paper, 12pt]{report}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% author{Bekhelifa A Djelfa le 06/05/2022} % نموذج لصفحة غلاف مذكرة يمكن التعديل عليه
+%%%%     compiler pdfLaTeX
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[top=1cm,bottom=1cm,left=2cm,right=2cm]{geometry}
+%-----------------------------------------------------------------------  01
+\usepackage[pdftex]{graphicx}
+\usepackage{graphics}
+\usepackage{fancyhdr} 
+\usepackage[sfdefault]{roboto}
+
+
+\fancypagestyle{nonumber}{
+    \fancyhf{} % Clear header and footer
+    \renewcommand{\headrulewidth}{0pt} % Remove header line
+    \renewcommand{\footrulewidth}{0pt} % Remove footer line
+}
+\pagestyle{nonumber}
+
+ %----------------------------------------------------------------------   02
+\usepackage[utf8]{inputenc} 
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{float}
+
+%-----------------------------------------------------------------------   03
+\linespread{1.5}
+
+
+\begin{document}
+
+\begin{center}
+
+
+\begin{tabular}{c}
+\small
+République Tunisienne\\
+Ministère de l’Enseignement Supérieur et de la Recherche Scientifique \\
+\vspace{0.2cm}
+\small
+Université de Carthage \\
+\vspace{0.1cm}
+\small
+Institut des Hautes Études Commerciales
+\end{tabular}
+
+
+\vspace{0.4cm}
+\includegraphics[width=5cm]{logo.png} % Replace "logo" with the filename of your logo image
+
+\vspace{0.8cm}
+
+
+
+\vspace{0.5cm}
+{\Large{\textbf{RAPPORT DE FIN D'\'ETUDES }}}
+\center{\textbf{Parcours}}
+\vspace{-0.4cm}
+\center{Informatique De Gestion}
+\center{\textbf{Specialit\'e}}
+\vspace{-0.4cm}
+\center{\small{Business Intelligence}}
+\vspace{1cm}
+\hrule height 1pt
+\vspace{0.5cm}
+{\large{\textbf{Intitulé du projet : }\\Analyse Comparative des Méthodes d'Estimation Non-Paramétriques pour l'Estimation de Densité dans le domaine d'Apprenstissage Automatique
+}} % en maj
+%\vspace{0.05cm}
+\vspace{0.7cm}
+\\ \par
+\hrule height 3pt
+\par
+\vspace{0.8cm}
+\center{\textbf{Présenté par}}
+\vspace{-0.2cm}
+\center{\large{Mehyar MLAWEH}}
+\vspace{0.4cm}
+
+\center{\textbf{Dirigé par}}
+\vspace{-1cm}
+
+\begin{table} [H]
+\center
+\renewcommand{\footnoterule}{}
+\renewcommand{\arraystretch}{1}
+\setlength\tabcolsep{5pt}
+\begin{tabular}{ll}
+
+
+
+   \\ Molka GHROBEL  & Maitre Assistante, IHEC, Universit\'e de Carthage
+   \\ Faouzi GHROBEL  & Professeur, ENSI, Universit\'e de Manouba
+
+  
+\\ \vspace{0.3cm}
+\end{tabular}
+\end{table}
+\begin{center}
+ \large \textbf{Laboratoire/Unit\'e de recherche }: \\ CRISTAL pôle GRIFT
+
+\end{center}
+ \vspace{2cm}
+\hrule
+ \vspace{0.5cm}
+\footnotesize{2022-2023}
+
+\end{center}
+
+\newpage
+  \vspace*{1.5cm}
+\section*{\textsc{Résumé}}
+Ce travail de recherche s'inscrit dans le cadre d'un projet de fin d'études visant à obtenir le diplôme de licence en Business Intelligence pour l'année universitaire 2022-2023 à l'Institut des Hautes Études Commerciales de Carthage (IHEC). Les travaux développés dans cette mémoire ont pour objectif de développer de nouvelles métriques probabilistes pour l'évaluation des performances des classifieurs par l'estimation non paramétrique des taux de précision. Comme méthodes d'estimation, nous avons utilisé la méthode de l'histogramme et la méthode du noyau avec optimisation du paramètre de lissage. Ensuite, nous avons illustré notre approche en utilisant les réseaux de neurones convolutifs pour classifier les chiffres manuscrits de la base d'images MNIST. Une application a ensuite été développée pour permettre aux chercheurs d'estimer les densités de probabilités des différentes distributions via une interface graphique conviviale. Les deux frameworks utilisés sont Flask et Angular.\\
+\textbf{Mots clés:} 
+Estimation par noyau, Paramètre de lissage, Réseaux de neurones convolutifs. 
+\rule{10cm}{0.5pt}
+
+\section*{\textsc{Abstract}}
+This research work is part of a final year project to obtain a Bachelor's degree in Business Intelligence for the academic year 2022-2023 at the Carthage Institute of Higher Commercial Studies (IHEC). The objectives of the research conducted in this thesis are to develop new probabilistic metrics for evaluating classifier performance through non-parametric estimation of precision rates. For estimation methods, we utilized the histogram method and the kernel method with smoothing parameter optimization. Furthermore, we demonstrated our approach using convolutional neural networks for classifying handwritten digits from the MNIST image database. Subsequently, an application was developed to allow researchers to estimate probability densities of different distributions through a user-friendly graphical interface. The two frameworks used are Flask and Angular.\\
+\textbf{Keywords:} 
+Kernel Density Estimation, Bandwidth Parameter, Convolutional Neural Networks.
+
+
+
+
+
+
+
+
+\end{document}
